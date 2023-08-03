@@ -1,13 +1,12 @@
 package com.tdd.demo;
 
-
 class Franc extends Money {
 
     Franc(int amount) {
         this.amount = amount;
     }
 
-    Franc times(int multiplier) {
+    Money times(int multiplier) {
         return new Franc(amount * multiplier);
     }
 
@@ -15,4 +14,5 @@ class Franc extends Money {
         Franc franc = (Franc) object;
         return amount == franc.amount;
     }
+
 }
